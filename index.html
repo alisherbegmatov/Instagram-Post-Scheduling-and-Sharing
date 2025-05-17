@@ -1,34 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram Post Scheduling and Sharing</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the HTML document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures the page is responsive and scales correctly on mobile -->
+    <title>Instagram Post Scheduling and Sharing</title> <!-- Sets the title of the page that appears in the browser tab -->
+    <link rel="stylesheet" href="styles.css"> <!-- Links an external CSS file for styling the page -->
 </head>
 <body>
     <div class="container">
+        <!-- Main container for the page content -->
+
         <h1>Instagram Post Scheduling and Sharing</h1>
+        <!-- Page heading -->
 
         <!-- Instagram login button -->
         <button id="loginBtn" onclick="loginWithInstagram()">Login with Instagram</button>
+        <!-- This button triggers the loginWithInstagram function when clicked -->
 
-        <!-- Create a post form -->
+        <!-- Create a post form (initially hidden) -->
         <div id="postForm" class="hidden">
-            <h2>Create a Post</h2>
+            <h2>Create a Post</h2> 
+            <!-- Subheading for the post creation section -->
+
             <input type="file" id="imageInput" accept="image/*" />
+            <!-- Input field for the user to upload an image. The 'accept' attribute ensures only image files are selected -->
+
             <textarea id="caption" placeholder="Write a caption..."></textarea>
+            <!-- Textarea where the user can write a caption for their Instagram post -->
+
             <button onclick="schedulePost()">Schedule Post</button>
+            <!-- Button to schedule the post. This triggers the schedulePost function -->
         </div>
 
-        <!-- Scheduled Posts -->
+        <!-- Scheduled Posts Section -->
         <div id="scheduledPosts">
-            <h2>Scheduled Posts</h2>
+            <h2>Scheduled Posts</h2> 
+            <!-- Heading for displaying scheduled posts -->
+
             <ul id="scheduledList"></ul>
+            <!-- Unordered list to display the scheduled posts -->
         </div>
     </div>
 
     <script src="https://connect.facebook.net/en_US/sdk.js"></script>
+    <!-- Facebook SDK for Instagram API integration -->
     <script src="script.js"></script>
+    <!-- External JavaScript file where the Instagram login and post scheduling logic is defined -->
 </body>
 </html>

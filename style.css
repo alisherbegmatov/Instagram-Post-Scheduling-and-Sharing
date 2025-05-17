@@ -1,68 +1,78 @@
+/* Reset default margin, padding, and set box-sizing to border-box for all elements */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0;             /* Remove default margin */
+    padding: 0;            /* Remove default padding */
+    box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
 }
 
+/* Style for the body element */
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif; /* Set default font to Arial or sans-serif */
+    display: flex;                  /* Use flexbox layout */
+    justify-content: center;        /* Center content horizontally */
+    align-items: center;            /* Center content vertically */
+    height: 100vh;                  /* Full viewport height */
+    background-color: #f4f4f4;     /* Light grey background */
 }
 
+/* Container for centralizing the content and styling */
 .container {
-    text-align: center;
-    background-color: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    width: 100%;
+    text-align: center;                /* Center the text inside */
+    background-color: white;           /* White background */
+    padding: 2rem;                     /* 2rem padding around content */
+    border-radius: 8px;                /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow around container */
+    max-width: 500px;                  /* Maximum width of the container */
+    width: 100%;                       /* Take up full width (up to the max-width) */
 }
 
+/* Styling for buttons */
 button {
-    padding: 10px 20px;
-    background-color: #0078D4;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    margin: 20px 0;
+    padding: 10px 20px;               /* 10px vertical, 20px horizontal padding */
+    background-color: #0078D4;        /* Blue background color */
+    color: white;                     /* White text color */
+    border: none;                     /* Remove default border */
+    border-radius: 4px;               /* Rounded corners */
+    cursor: pointer;                  /* Change cursor to pointer on hover */
+    font-size: 16px;                   /* Set font size to 16px */
+    margin: 20px 0;                    /* 20px top and bottom margin */
 }
 
+/* Button hover effect */
 button:hover {
-    background-color: #005bb5;
+    background-color: #005bb5;        /* Change background color to darker blue when hovered */
 }
 
+/* Class for hiding elements */
 .hidden {
-    display: none;
+    display: none;                    /* Hide elements that have the 'hidden' class */
 }
 
+/* Styling for file input */
 input[type="file"] {
-    padding: 10px;
-    margin: 10px 0;
+    padding: 10px;                    /* Padding inside the file input field */
+    margin: 10px 0;                   /* 10px margin top and bottom */
 }
 
+/* Styling for text area */
 textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    height: 100px;
+    width: 100%;                       /* Make textarea full width */
+    padding: 10px;                     /* Padding inside the textarea */
+    margin: 10px 0;                    /* Margin top and bottom */
+    border: 1px solid #ddd;           /* Light grey border */
+    border-radius: 4px;                /* Rounded corners */
+    height: 100px;                     /* Set height of the textarea */
 }
 
+/* Styling for unordered list */
 ul {
-    list-style: none;
+    list-style: none;                  /* Remove default list bullets */
 }
 
+/* Styling for list items */
 li {
-    background-color: #f9f9f9;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 4px;
+    background-color: #f9f9f9;         /* Light grey background for list items */
+    margin: 10px 0;                    /* 10px margin top and bottom */
+    padding: 10px;                     /* Padding inside each list item */
+    border-radius: 4px;                /* Rounded corners */
 }
